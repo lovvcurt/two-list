@@ -1,0 +1,94 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-size: 40px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+  background: rgb(0, 79, 216);
+  box-shadow: 0 -200px 100px -120px rgba(220, 20, 60, 0.441) inset;
+  animation: background 5s infinite alternate;
+}
+
+@keyframes background {
+  50% {
+    background: skyblue;
+    box-shadow: 0 -200px 100px -100px yellowgreen inset;
+  }
+}
+.true {
+  width: 640px;
+  height: 720px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.false {
+  width: 640px;
+  height: 720px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.love{
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 340px;
+  height: 420px;
+  background-color: rgba(0, 255, 255, 0.329);
+}
+.love:hover{
+  cursor: pointer;
+}
+.nolove{
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 340px;
+  height: 420px;
+  background-color: rgba(0, 255, 255, 0.329);
+}
+.nolove:hover{
+  width: 640px;
+  height: 820px;
+  font-size: 60px;
+}
+button{
+  background-color: rgba(0, 255, 255, 0);
+  border: 0ch;
+  font-size: 40px;
+  width: 640px;
+  height: 820px;
+}
+button:hover{
+  cursor: pointer;
+}
+button::before {
+  content: "Не люблю";
+}
+button:hover::before {
+  content: "Ты уверена(?";
+}
+@media screen and (max-width: 500px) {
+.true{
+ 
+}
+.false{
+  
+}
+}
+a:active,
+a:hover,  
+a{
+  text-decoration: none;
+  color: #000;
+}
